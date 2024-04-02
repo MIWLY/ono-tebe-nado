@@ -55,18 +55,16 @@
 
 .cover{
     margin-bottom: 179px;
-    width:1100px;
     height: 757px;
 }
 
 .background-image{
     position: absolute;
     z-index: -1;
-    padding: 0;
-    margin: 0;
+    width: 1100px;
 }
 
-.title{
+.title-word{
     color: #fff;
     font-weight: 700;
     font-size: 100px;
@@ -74,16 +72,14 @@
     display: flex;
 }
 
-.title-word{
-    display: block;
-}
-
 .word-center{
-    text-align: center;
+    justify-self: center;
+    align-self: center;
 }
 
 .word-right{
-    text-align: end;
+    justify-self: flex-end;
+    align-self: flex-end;
 }
 
 .lots{
@@ -96,16 +92,17 @@
 }
 
 .lots-cards-list{
-display: flex;
-flex-direction: row;
-list-style: none;
-gap: 25px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 25px;
 }
 
 .card{
     width: 334px;
     height: 556px;
     position: relative;
+    display: flex;
 }
 
 .lot-image{
@@ -117,28 +114,26 @@ gap: 25px;
     display: flex;
     color: #fff;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     background-color: rgb(0 0 0 / 0.5);
+    height: 556px;
 }
 
 .lot-title{
     font-size: 22px;
     line-height: 26.4px;
-    margin: 51px 40px 238px;
-}
+    margin: 51px 40px 48px;
 
-.title-second{
-    margin-bottom: 0;
-}
-
-.title-third{
-    margin-bottom: 90px;
 }
 
 .lot-text{
     font-size: 20px;
     line-height: 24px;
-    margin: 0px 40px 48px;
+    margin: 0 40px 48px;
+}
+
+.title-second{
+    margin-bottom: 0;
 }
 
 .more{
@@ -151,6 +146,7 @@ gap: 25px;
     height: 595px;
     width: 1052px;
     display: flex;
+    margin-bottom: 181px;
 }
 
 .about_logo{
@@ -177,7 +173,6 @@ gap: 25px;
     justify-content: flex-end;
     align-items: flex-start;
     flex-direction: column;
-    white-space: wrap;
     height: 449px;
     width: 693px;
     margin-left: 72px;
@@ -200,4 +195,33 @@ gap: 25px;
     width: 693px;
     font-size: 20px;
     line-height: 24px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section-links{
+    flex-direction: column;
+    order: 1;
+    gap: 0;
+    text-align: center;
+}
+
+.footer-links-item{
+    list-style: none;
+}
+
+.social_media{
+    display: flex;
+    order: 2;
+    list-style: none;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.social_media-item{
+    width: 48px;
+    height: 48px;
 }
