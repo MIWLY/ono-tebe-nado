@@ -54,32 +54,115 @@
 }
 
 .cover{
+    width: 1100px;
     margin-bottom: 179px;
     height: 757px;
+    display: flex;
 }
 
 .background-image{
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     width: 1100px;
+    height: 757px;
 }
 
-.title-word{
-    color: #fff;
-    font-weight: 700;
+.color{
+    z-index: -1;
+    position: absolute;
+    width: 1100px;
+    height: 757px;
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+.container{ 
+    z-index: 1;
+    margin: 165px 50px 62px;
+    text-align: center; 
+    width: auto; 
+    height: 100px;  
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    row-gap: 20px;
+}
+
+.words { 
+    color: #fff; 
+    text-transform: uppercase; 
+    font-family: "Raleway"; 
     font-size: 100px;
-    line-height: 115px;
+    line-height: 100px;
+    font-weight: 700;
     display: flex;
+    flex-direction: row;
+    letter-spacing: 30px;
 }
 
-.word-center{
-    justify-self: center;
-    align-self: center;
+.letter{
+    display: flex;
+    letter-spacing: 60px;
 }
 
-.word-right{
-    justify-self: flex-end;
-    align-self: flex-end;
+.word-3-letter{
+    letter-spacing: 30px;
+}
+
+.title-word-1 { 
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 2 
+}
+
+.title-word-2 { 
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 3;
+    margin-left: -100px;
+}
+
+.title-word-3 { 
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 3; 
+    grid-row-end: 4;
+    margin-left: -135px;
+    letter-spacing: 60px;
+}
+
+.buy-link-section{
+    font-weight: 400;
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 4; 
+    grid-row-end: 5;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 79px;
+    padding: 0;
+    margin: 0;
+    margin-top: 147px;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 28px;
+    
+}
+
+.buy-link-text{
+    word-spacing: 22px;
+}
+
+.buy-link-button{
+    box-sizing: border-box;
+    width: 256px;
+    height: 51px;
+    padding: 12px 32px 11px 31px;
+    text-decoration: none;
+    border: 1px solid white;
+    margin-top: -13px;
 }
 
 .lots{
